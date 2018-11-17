@@ -1,0 +1,29 @@
+<div fxLayout="column" class="login-sec">
+  <div fxFlexFill>
+    <div class="logo-wrapper">
+      <img src="/assets/logo.png" alt="logo" width="100" height="100">
+    </div>
+    <br><br>
+    <p *ngIf="errorMessage" class="message-display error">{{errorMessage}}</p>
+    <p *ngIf="successMessage" class="message-display success">{{successMessage}}</p>
+    <form novalidate [formGroup]="loginForm" (ngSubmit)="submit()">
+      <div class="Input">
+        <input type="text"
+               formControlName="email"
+               id="username" class="Input-text"
+               placeholder="Your username, e.g. Nicholas@example.com"
+               (blur)="blur()"
+        >
+      </div>
+      <p style="color: #a94442" *ngIf="displayMessage.email">{{displayMessage.email}}</p>
+      <div class="Input">
+        <input type="password" formControlName="password" id="password" class="Input-text" placeholder="Your password">
+      </div>
+      <p style="color: #a94442" *ngIf="displayMessage.password">{{displayMessage.password}}</p>
+      <button class="signin-button" mat-raised-button>
+        <span class="progress-wrapper" *ngIf="loading"> <mat-progress-spinner color="accent" [mode]="'indeterminate'" [strokeWidth]="5" [diameter]="30"></mat-progress-spinner></span>
+        <span *ngIf="!loading">Sign in</span>
+      </button>
+    </form>
+  </div>
+</div>

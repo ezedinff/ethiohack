@@ -1,0 +1,72 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+body, html {
+  margin: 0;
+  padding: 0;
+}
+.spacer {
+  width: 100%;
+}
+.container-fluid {
+  padding: 0 16px;
+}
+app-project {
+  margin-top: 24px;
+}
+.board{
+  //linearGradient: #24c6dc, #514a9d; // #5c258d #4389a2, 614385, 516395
+  background: linear-gradient(white, rgba(176, 172, 169, 0.5));
+  min-height: 128px;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+}
+
+::ng-deep .mat-dialog-container{
+  padding: 0 0 5em;
+  overflow: hidden;
+}
+.submit-button{
+  float: right !important;
+  margin: 1em 2em 1em 0;
+}
+.half-width{
+  width: 48%;
+  margin: 0 1%;
+}
+.full-width{
+  width: 98%;
+  margin: 0 1%;
+  overflow: hidden;
+}
+::ng-deep .mat-form-field-flex{
+  background-color: #f5f5f5;
+  padding: 0 16px;
+}
+.dialog-container{
+  padding-bottom: 5em;
+}
+
+::ng-deep .mat-select-panel{
+  // min-width: 80% !important;
+  position: relative !important;
+  left: 32px !important;
+  // transform-origin: 100% 0px 24px !important;
+}
+.message-display {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.error {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+}
+.success {
+  color: #3c763d;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+

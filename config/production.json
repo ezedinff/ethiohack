@@ -1,0 +1,10 @@
+{
+  "api": {
+    "baseUrl": "https://api.vitamande.org/api"
+  },
+  "path": {
+    "imageRoot": "/assets/images",
+    "userImageFolder": "/assets/images/users/"
+  },
+  "debugging": false
+}

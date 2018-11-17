@@ -1,0 +1,8 @@
+<mat-card id="card-with-no-padding" style="margin-top: 7%; width: 80%; margin-left: 10%; align-self: center;">
+  <mat-card-content>
+    <div fxLayout="row" fxLayout.xs="column">
+      <app-login-form fxFlex="40" (login)="login($event)" [successMessage]="successMessage$ | async" [errorMessage]="errorMessage$ | async" [loading]="loading$ | async"></app-login-form>
+      <app-login-slider fxFlex="60" fxHide.lt-sm></app-login-slider>
+    </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+  Gerami app
+</mat-toolbar>
+<mat-tab-group>
+  <mat-tab [label]="'Requests'">
+    <ng-template matTabContent>
+      <request-list></request-list>
+    </ng-template>
+  </mat-tab>
+
+  <mat-tab [label]="'Accepted'">
+    <ng-template matTabContent>
+      <accepted-list></accepted-list>
+    </ng-template>
+  </mat-tab>
+  <mat-tab [label]="'Delivered'">
+    <ng-template matTabContent>
+      <delivered-list></delivered-list>
+    </ng-template>
+  </mat-tab>
+</mat-tab-group>
